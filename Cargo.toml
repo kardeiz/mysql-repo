@@ -2,6 +2,10 @@
 authors = ["Jacob Brown <kardeiz@gmail.com>"]
 name = "mysql-repo"
 version = "0.1.0"
+description = "Repository pattern traits for rust-mysql-simple"
+keywords = ["mysql", "repository"]
+license = "MIT"
+repository = "https://github.com/kardeiz/mysql-repo"
 
 [dependencies]
 mysql = "10.0.0"

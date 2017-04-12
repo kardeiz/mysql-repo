@@ -1,7 +1,9 @@
 mysql-repo
 ==========
 
-A tiny library that exposes a `Repository` trait (and some helper traits) to structure some CRUD SQL boilerplate.
+A tiny library that exposes a `Repository` trait (and some helper traits) to structure some CRUD SQL boilerplate. 
+
+Currently just for [rust-mysql-simple](https://github.com/blackbeam/rust-mysql-simple/).
 
 Just implement some of the library's traits:
 
