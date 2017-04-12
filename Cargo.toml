@@ -1,0 +1,7 @@
+[package]
+authors = ["Jacob Brown <kardeiz@gmail.com>"]
+name = "mysql-repo"
+version = "0.1.0"
+
+[dependencies]
+mysql = "10.0.0"
