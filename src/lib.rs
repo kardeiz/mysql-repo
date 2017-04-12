@@ -3,7 +3,7 @@ extern crate mysql;
 use mysql::{Params, Row, Error};
 use mysql::conn::GenericConnection;
 
-pub trait Repository: Sized {
+pub trait Repository {
 
     fn where_one<T, P, Where>(conn: &mut T, sql: &str, params: P) -> Result<Option<Where>, Error>
         where T: GenericConnection, Where: Whereable<Self>, P: Into<Params>, Self: Sized {
