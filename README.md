@@ -53,9 +53,11 @@ impl Deletable<Users> for User {
 
 And then you can do:
 
-    let mut user: User = Repository::find(&mut conn, 1)?.ok_or("No users")?;    
-    user.email = "something@email.com";
-    Repository::update(&mut conn, &user)?;
-    let user: User = Repository::where_one("email = ?", ("something@email.com",))?.ok_or("No users")?;
+```rust
+let mut user: User = Repository::find(&mut conn, 1)?.ok_or("No users")?;    
+user.email = "something@email.com";
+Repository::update(&mut conn, &user)?;
+let user: User = Repository::where_one("email = ?", ("something@email.com",))?.ok_or("No users")?;
+```
 
 etc.
